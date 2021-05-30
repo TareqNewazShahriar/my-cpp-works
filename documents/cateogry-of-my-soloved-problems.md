@@ -1,4 +1,4 @@
-﻿*~~ACM Problem Set Archives Discussion~~*
+﻿## ACM Problem Set Archives Discussion
 
 I saw the page of Steven Halim’s “Method to Solve”; but one can guess the difficulties of a problem by seeing the rating but perhaps he might be thought that this is too difficult. Same way, one may think about a particular problem that- this is not too difficult but when he sees the high rate and then he might left or try to think complexly. So here, I only try to give a concept about a problem difficulty. The difficulty is classified into four classes only. The complexity ‘B’ is only for the beginners so that they can proceed with a smooth start. Moreover, by far, Steven’s hints do not seem as hint to me; it’s quietly seems as solution. So I mentioned the algorithm and brief hint which helps the programmers to learn and explore, sharpen their logic and intelligence.
 
