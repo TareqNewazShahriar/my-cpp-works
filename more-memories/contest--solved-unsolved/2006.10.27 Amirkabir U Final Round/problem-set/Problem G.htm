@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0063)http://online-judge.uva.es/contest/data/0157/problemset/p6.html -->
+<HTML><HEAD><TITLE>Problem G</TITLE>
+<META http-equiv=Content-Language content=en-us>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE>DIV.Section1 {
+	page: Section1
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<P align=center><B><SPAN style="FONT-SIZE: 28pt; FONT-FAMILY: Arial">Problem 
+G</SPAN></B><SPAN style="FONT-FAMILY: Arial"><BR></SPAN><B><SPAN 
+style="FONT-SIZE: 20pt; FONT-FAMILY: Arial">&nbsp;Insurrection</SPAN></B><SPAN 
+style="FONT-SIZE: 20pt; FONT-FAMILY: Arial"><BR></SPAN><SPAN 
+style="FONT-FAMILY: Arial"><B>Time Limit: </B><SPAN>3</SPAN> Seconds</SPAN></P>
+<P style="TEXT-ALIGN: justify">It is <I>8282</I> AD and the Bizz and the Pezz 
+are two allied kings in the Far Far Away island, which consists of many 
+territories some of them connected to each other with some roads. Recently, they 
+found that a group of criminals under leadership of MijIT Dozddar want to begin 
+two simultaneous insurrections in their territories. Therefore, they tried to 
+recognize these criminals, but they did not succeed. Now, they have another plan 
+for preventing the insurrections. They know the criminals must be in contact for 
+simultaneous insurrections and by preventing them contact each other, they can 
+prevent insurrection. In addition, they know their soldiers can identify these 
+criminal outside of their territories. So, by building a tower in another 
+territory (a territory except than Bizz’s or Pezz’s territory), soldiers of this 
+tower can recognize criminals and the criminals cannot pass this territory to 
+contact. To convince the king of a territory for building a tower in his 
+territory, both of them must send one carrier with one letter to her/him to 
+request for construction permission of the tower. Also, the carrier of this 
+letter must not enter a territory more than once since the criminals may catch 
+her/him. In addition, the carrier of&nbsp;the letter must pay some money in some 
+territories when he enters them and he earns some money when he enters some 
+other territories under indirect control of Bizz or Pezz. Of course, since the 
+territories under control of Bizz or Pezz are few, the money <SPAN 
+style="FONT-SIZE: 12pt">carrier </SPAN>earns is always less than or equal to the 
+money he must pay. It should be noted that if one starts from a territory, 
+visits some other territories and goes back to the first territory, he does not 
+have more money than before starting the trip. Now, Bizz and Pezz need your help 
+to select some territories for building some towers such that the criminals of 
+their territories could not contact each other and the total money required for 
+sending the letters to these territories be minimum. </P><SPAN 
+style="FONT-SIZE: 10pt"></SPAN><FONT 
+style="FONT-SIZE: 16pt"><B>Input</B></FONT><BR>The input begins with 
+a&nbsp;positive integer&nbsp;<B>T</B> showing the number of test cases and 
+then,<STRONG> T</STRONG> test cases follow. Each test case begins with a line 
+containing two integers 2&lt;=<STRONG>n</STRONG>&lt;=50 and 
+0&lt;=<STRONG>m</STRONG>&lt;=300 showing the number of territories and roads 
+between them respectively. Bizz is in territory&nbsp;<STRONG>1</STRONG> and Pezz 
+is in territory <STRONG>n</STRONG>. After that, a line with <STRONG>n-2</STRONG> 
+real numbers come where&nbsp;the <STRONG>i</STRONG>th one shows the amount of 
+money the carrier must pay in the&nbsp;territory <STRONG>i+1 </STRONG>(which can 
+be negative if the territory is under indirect control of Bizz or Pezz). Then, 
+<STRONG>m </STRONG>lines come containing two integer between <STRONG>1</STRONG> 
+and <STRONG>n</STRONG> describing endpoints of a&nbsp;road. There is a blank 
+line after each test case. 
+<P style="TEXT-ALIGN: justify"><FONT 
+style="FONT-SIZE: 16pt"><B>Output</B></FONT><BR>For&nbsp;each test case, your 
+program must output the minimum money required for sending the letters 
+if&nbsp;Bizz and Pezz&nbsp;can prevent insurrections with their new plan rounded 
+to four digits after fraction point, and otherwise a line containing "<B>No 
+Solution!</B>".&nbsp;</P>
+<TABLE 
+style="BACKGROUND: rgb(204,204,204) 0% 50%; WIDTH: 6.7in; BORDER-COLLAPSE: collapse; moz-background-clip: initial; moz-background-origin: initial; moz-background-inline-policy: initial" 
+height=229 cellSpacing=0 cellPadding=0 width=643 bgColor=#cccccc border=1>
+  <TBODY>
+  <TR bgColor=#0000e0>
+    <TD style="FONT-SIZE: 18px" bgColor=#ffffff><B>
+      <CENTER>Sample Input</CENTER></B></TD>
+    <TD style="FONT-SIZE: 18px" bgColor=#ffffff><B>
+      <CENTER>Sample Output</CENTER></B></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 239.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 0.5pt solid" 
+    vAlign=top width=319><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>1</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>7 8</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>10.0 5.0 -3.0 6.0 6.0</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>1 2</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>2 3</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>3 4</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>4 5</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>5 3</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>3 7</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>1 6</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt"><B>6 7</B></PRE><PRE style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt">&nbsp;</PRE></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 243pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 0.5pt solid" 
+    vAlign=top width=324><PRE style="FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: Courier New">28<STRONG>.0000</STRONG></PRE><PRE style="FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: Courier New; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt">&nbsp;</PRE></TD></TR></TBODY></TABLE>
+<DIV class=Section1>
+<DIV class=MsoNormal style="TEXT-ALIGN: center" align=center>
+<HR align=center width="100%" SIZE=2>
+</DIV><FONT face="Arial, Times New Roman"><B>Problem setter: Hossein Azizpour 
+&amp; Babak Behsaz</B></FONT></DIV>
+<P><B><FONT style="FONT-SIZE: 10pt" face="Arial, Times New Roman">1st Amirkabir 
+UT Annual Programming Contest&nbsp; Final Round</FONT></B></P></BODY></HTML>

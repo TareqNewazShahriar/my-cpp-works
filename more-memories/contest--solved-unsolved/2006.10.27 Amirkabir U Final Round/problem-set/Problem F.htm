@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0063)http://online-judge.uva.es/contest/data/0157/problemset/p5.html -->
+<HTML><HEAD><TITLE>Problem F</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE>DIV.Section1 {
+	page: Section1
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<DIV>
+<P align=center><B><SPAN style="FONT-SIZE: 28pt; FONT-FAMILY: Arial">Problem 
+F</SPAN></B><SPAN style="FONT-FAMILY: Arial"><BR></SPAN><B><SPAN 
+style="FONT-SIZE: 20pt; FONT-FAMILY: Arial">&nbsp;AvreniM</SPAN></B><SPAN 
+style="FONT-SIZE: 20pt; FONT-FAMILY: Arial"><BR></SPAN><SPAN 
+style="FONT-FAMILY: Arial"><B>Time Limit: </B><SPAN>3</SPAN> Seconds</SPAN></P>
+<P style="TEXT-ALIGN: justify">I wish that you remember king Basm and Koorosh 
+from the contest of last year! But do not worry; I will introduce them to you, 
+again! In ancient times, many territories were under the control of a powerful 
+king called Basm. Basm is well-known in history because of his strange works and 
+as a result, there are many history-lovers who wish to know more about him. 
+Koorosh Esteghrarzadeh is one of them and he has worked hard to find a way to 
+know more about Basm’s works. Recently, he managed to invent a Time Machine™ and 
+traveled to the past to Basm time in order to be able to see and study his weird 
+works thoroughly. Unfortunately, he has been caught by royal guard soldiers of 
+Basm and is now in his prison. </P>
+<P style="TEXT-ALIGN: justify">At the same time, Basm’s advisors suggested him 
+to build a new city, named Avrenim, to improve the industry of his territories 
+and they gave him the road map of the city. The advisors have designed the city 
+such that all roads are <I>unidirectional</I> and there exists at least one path 
+from each junction to any other junction in the city and there is not any road 
+from a junction to itself. In addition, they estimated the time that 
+construction of each road requires. Also, they told Basm the whole structure of 
+the map is confidential and must stay unknown until the city completely 
+constructed, because otherwise, it will not affect the industry that much. </P>
+<P style="TEXT-ALIGN: justify">As Basm madly loves his wife, he likes to be with 
+her all the times! Thus, he likes to work as less as possible and he decided to 
+construct just some of the roads instead of all of them. Then, after 
+constructing these roads, he wants to order his little brother to construct the 
+remaining roads by just telling him the roads endpoints, but not their 
+directions (to secure the whole structure of the map to some extent) and 
+ordering him to choose the direction of the roads such that there exists at 
+least one path from each junction to any other junction in the city. Now, he 
+wants to select the roads (if required all of them!), which he should construct, 
+with minimum sum of construction time such that after ending of construction, 
+the resulted road map be exactly the same as the road map his advisors suggested 
+him (in other words, his selection of the roads forces appropriate direction of 
+the other roads to satisfy the constraint mentioned above). Now, Basm ordered 
+Koorosh to solve this problem given the roads of the city and their construction 
+time, if he wants to stay alive!</P>
+<P><FONT style="FONT-SIZE: 16pt"><B>Input</B></FONT><BR>The input begins with 
+a&nbsp;positive integer&nbsp;<STRONG>T</STRONG> showing the number of test cases 
+and then,<STRONG> T</STRONG> test cases follow. Each test case begins with a 
+line containing two integers <STRONG>0&lt;n </STRONG>&lt;= 50 and <STRONG>m 
+</STRONG>&lt;= 1000) showing the number of junctions and roads respectively. 
+Then, <STRONG>m </STRONG>lines come containing two integer <STRONG>h</STRONG> 
+and <STRONG>t</STRONG> between <B>1</B> and <B>n</B> showing head and tail of a 
+road and a positive real number <STRONG>c </STRONG>showing the construction time 
+of this road. There is a blank line after each test case. </P>
+<P style="TEXT-ALIGN: justify"><FONT 
+style="FONT-SIZE: 16pt"><B>Output</B></FONT><BR>For&nbsp;each test case, your 
+program must output the minimum sum of construction times of the roads, which 
+Basm&nbsp;must construct.</P>
+<TABLE 
+style="BACKGROUND: rgb(204,204,204) 0% 50%; WIDTH: 6.7in; BORDER-COLLAPSE: collapse; moz-background-clip: initial; moz-background-origin: initial; moz-background-inline-policy: initial" 
+cellSpacing=0 cellPadding=0 width=643 bgColor=#cccccc border=1>
+  <TBODY>
+  <TR bgColor=#0000e0>
+    <TD style="FONT-SIZE: 18px" bgColor=#ffffff><B>
+      <CENTER>Sample Input</CENTER></B></TD>
+    <TD style="FONT-SIZE: 18px" bgColor=#ffffff><B>
+      <CENTER>Sample Output</CENTER></B></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 239.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 0.5pt solid" 
+    vAlign=top width=319><PRE style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><B>1</B></PRE><PRE style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><B>3 3</B></PRE><PRE style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><B>1 2 5.0</B></PRE><PRE style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><B>2 3 4.5</B></PRE><PRE style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><B>3 1 5.5</B></PRE><PRE style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</PRE></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 243pt; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 0.5pt solid" 
+    vAlign=top width=324><PRE style="FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: Courier New; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><B>4.5</B></PRE></TD></TR></TBODY></TABLE>
+<HR>
+
+<DIV class=Section1><FONT face="Arial, Times New Roman"><B>Problem setter: 
+</B></FONT><B><FONT face="Arial, Times New Roman">Babak Behsaz</FONT></B></DIV>
+<P><B><FONT style="FONT-SIZE: 10pt" face="Arial, Times New Roman">1st Amirkabir 
+UT Annual Programming Contest&nbsp; Final 
+Round</FONT></B></P></DIV></BODY></HTML>

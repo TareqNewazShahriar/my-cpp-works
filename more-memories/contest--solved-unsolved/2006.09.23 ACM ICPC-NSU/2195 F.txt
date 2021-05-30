@@ -1,0 +1,140 @@
+2
+4
+8
+6
+12
+18
+36
+24
+72
+
+10
+12
+15
+20
+36
+49
+50
+100
+100000000000000
+0
+
+/////////////////////////////load in str \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#include<stdio.h>
+#include<math.h>
+#define SIZE 1000
+
+typedef __int64 Type;
+/****************************Global Variables***************************/
+Type n,dev[SIZE],u;
+/*************************User Defined Functions************************/
+/*____________Load devisor of 'n' Typeo two array by evaluate the sqrt of n___________*/
+/*_(Type n, Type left_devisor, Type right_devisor, Type tot_left_dev, Type tot_right_dev)_*/
+void load_devisor()
+{
+	Type i,sq;
+	u=0;
+	sq=sqrt(n)+1;
+	for(i=2;i<sq;i++)
+	{
+		if(n%i==0) dev[u++]=i, dev[u++]=n/i;
+	}
+	if(u&&dev[u-1]==dev[u-2]) u--;
+	if(n>1) dev[u++]=n;
+}
+/**Convert the val from "from" to "to".||Require- num_equiv(), ASCII_equiv(),rev()***/
+/**(res_str, base_from, base_to, inputted_string)**It can Handle 0-1,A-Z; 2-36 base**/
+void base_conv(Type digi,Type to,char *load)
+{	
+	Type i=0;
+
+	while(digi)
+	{
+		*(load+ i++)=digi%to;
+		digi=digi/to;
+	}
+}	
+/*****************************main Function*****************************/
+void main()
+	{
+	freopen("2195 F.txt","r",stdin);
+
+	Type i,k;
+	char str[SIZE],*p;
+
+	scanf("%I64d",&n);
+	while(n)
+		{
+		printf("%I64d ",n);
+		load_devisor();
+		k=0;
+		for(i=0;i<u;i++)
+			{
+			base_conv(n,dev[i],str);
+			//_i64toa(n,str,dev[i]);
+			for(p=str+1,k++;*p==0;p++,k++);
+			}
+		printf("%I64d\n",k);
+
+		scanf("%I64d",&n);
+		}
+	}
+/////////////////////////////load in long long\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#include<stdio.h>
+#include<math.h>
+#define SIZE 1000
+
+typedef __int64 Type;
+/****************************Global Variables***************************/
+Type n,dev[SIZE],u;
+/*************************User Defined Functions************************/
+/*____________Load devisor of 'n' Typeo two array by evaluate the sqrt of n___________*/
+/*_(Type n, Type left_devisor, Type right_devisor, Type tot_left_dev, Type tot_right_dev)_*/
+void load_devisor()
+{
+	Type i,sq;
+	u=0;
+	sq=sqrt(n)+1;
+	for(i=2;i<sq;i++)
+	{
+		if(n%i==0) dev[u++]=i, dev[u++]=n/i;
+	}
+	if(u&&dev[u-1]==dev[u-2]) u--;
+	if(n>1) dev[u++]=n;
+}
+/**Convert the val from "from" to "to".||Require- num_equiv(), ASCII_equiv(),rev()***/
+/**(res_str, base_from, base_to, inputted_string)**It can Handle 0-1,A-Z; 2-36 base**/
+void base_conv(Type *load,Type digi,Type to)
+{	
+	Type i=0;
+
+	while(digi)
+	{
+		load[i++]=digi%to;
+		digi=digi/to;
+	}
+}	
+/*****************************main Function*****************************/
+void main()
+	{
+	freopen("2195 F.txt","r",stdin);
+
+	Type i,k, load[SIZE],*p;
+
+	scanf("%I64d",&n);
+	while(n)
+		{
+		printf("%I64d ",n);
+		load_devisor();
+		k=0;
+		for(i=0;i<u;i++)
+			{
+			base_conv(load,n,dev[i]);
+			//_i64toa(n,str,dev[i]);
+			for(p=load+1,k++;*p==0;p++,k++);
+			}
+		printf("%I64d\n",k);
+
+		scanf("%I64d",&n);
+		}
+	}

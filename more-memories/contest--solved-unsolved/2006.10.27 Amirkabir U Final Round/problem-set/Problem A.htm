@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0063)http://online-judge.uva.es/contest/data/0157/problemset/p0.html -->
+<HTML><HEAD><TITLE>Problem A</TITLE>
+<META http-equiv=Content-Language content=en-us>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE>DIV.Section1 {
+	page: Section1
+}
+P {
+	FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; FONT-FAMILY: "Times New Roman"
+}
+P.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt
+}
+SPAN.StyleArial16pt {
+	FONT-WEIGHT: bold
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY lang=EN-US vLink=blue link=blue bgColor=white>
+<DIV class=Section1>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><B><SPAN 
+style="FONT-SIZE: 28pt; FONT-FAMILY: Arial">Problem A</SPAN></B><SPAN 
+style="FONT-FAMILY: Arial"><BR></SPAN><B><SPAN 
+style="FONT-SIZE: 20pt; FONT-FAMILY: Arial">&nbsp;Little Ali's Little 
+Brother!</SPAN></B><SPAN 
+style="FONT-SIZE: 20pt; FONT-FAMILY: Arial"><BR></SPAN><SPAN 
+style="FONT-FAMILY: Arial"><B>Time Limit: </B>1 Second</SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN 
+style="FONT-FAMILY: Arial"></SPAN>&nbsp;</P>
+<P class=MsoNormal>Little Ali has a cute little brother. Recently, their father 
+has bought them a strange puzzle. The pieces of this puzzle has horizontal or 
+vertical edges (See figure below).</P>
+<P align=center><IMG height=199 src="Problem A_files/pieces.gif" width=575 
+border=0></P>
+<P style="TEXT-ALIGN: center"><I>Some sample pieces of a puzzle</I></P>
+<P class=MsoNormal>Since Little Ali loves his brother too much, he decided to 
+entertain&nbsp;him with a challenging task! He gave his&nbsp;brother the puzzle 
+board and some pieces, not necessarily fitting in&nbsp;the board. Little 
+Ali&nbsp;does not want&nbsp;to trouble his little brother,&nbsp;so he decided to 
+select the pieces that&nbsp;can fit&nbsp;in the&nbsp;board <EM>without any 
+rotation</EM>. Now, he needs your help to decide if a piece can be placed 
+appropriately in the board or not.</P>
+<P class=MsoNormal>&nbsp;</P>
+<H1><SPAN class=StyleArial16pt><SPAN 
+style="FONT-FAMILY: Arial">Input<O:P></O:P></SPAN> </SPAN></H1>
+<P class=MsoNormal>The input begins with a single integer <B>T</B> in a line 
+representing the number of test cases. Then, <B>T</B> test cases follow. Each 
+test case begins with the specification of&nbsp;a board, which is&nbsp;an <B>N 
+<FONT face=Arial>x</FONT> M</B> grid.&nbsp;In the first line of each test case, 
+there are three integers <B>N, M, S (0&lt;N, M&lt;=50, 0&lt;S&lt;=10)</B> in a 
+single line&nbsp;representing the number of rows and columns of the board and 
+the number of&nbsp; pieces respectively. After that, <STRONG>N</STRONG> lines 
+follow each containing exactly <STRONG>M</STRONG> characters where ‘*’ denotes a 
+cell of the board that a piece <EM>can</EM>&nbsp;occupy it and&nbsp; ‘.’ for the 
+cells which the piece <EM>cannot</EM><I>&nbsp;occupy</I> it. Afterwards, 
+<STRONG>S</STRONG> blocks follow that each block contain specification of&nbsp;a 
+piece. Specification of each block begins with two integers in&nbsp;a single 
+line <B>n</B>, <B>m</B> <B>(0&lt;n, m&lt;=50)</B> representing the number of 
+rows and columns of a rectangle box containing the&nbsp;piece <I>(not 
+necessarily minimum bounding box)</I>. Then, <B>n</B> lines follow each 
+containing exactly <B>m</B> characters specifying&nbsp;a piece where ‘*’ denotes 
+a cell belonging to the piece and&nbsp;‘.’ denotes&nbsp;a cell not belonging to 
+the piece. There&nbsp;is a blank line after each&nbsp;test case.</P>
+<P class=MsoNormal>&nbsp;</P>
+<H1><SPAN class=StyleArial16pt><SPAN 
+style="FONT-FAMILY: Arial">Output<O:P></O:P></SPAN> </SPAN></H1>
+<P class=MsoNormal>For&nbsp;each piece of a test case, you must print 
+“<B>Yes</B>” in the single line if this piece can be&nbsp;placed on the 
+corresponding board and “<B>No</B>” otherwise. Print a blank line after each 
+test case.</P>
+<H1>&nbsp;</H1>
+<TABLE id=table1 
+style="BACKGROUND: rgb(204,204,204) 0% 50%; WIDTH: 6.7in; BORDER-COLLAPSE: collapse; moz-background-clip: initial; moz-background-origin: initial; moz-background-inline-policy: initial" 
+cellSpacing=0 cellPadding=0 width=643 bgColor=#cccccc border=1>
+  <TBODY>
+  <TR>
+    <TD style="FONT-SIZE: 18px" borderColor=#000000 bgColor=#ffffff><B>
+      <CENTER>Sample Input </CENTER></B></TD>
+    <TD style="FONT-SIZE: 18px" borderColor=#000000 bgColor=#ffffff><B>
+      <CENTER>Sample Output </CENTER></B></TD></TR>
+  <TR>
+    <TD vAlign=top width=319>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>2</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>5 5 2</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>....*</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>...**</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>..***</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>...**</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>....*</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>3 2</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>**</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>**</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>**</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>1 6</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" 
+size=2>******</FONT></B></P>
+      <P class=MsoNormal>&nbsp;</P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>3 3 1</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>***</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>*.*</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>***</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" 
+      size=2>3&nbsp;2</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>**</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>.*</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>**</FONT></B></P><PRE style="FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: Courier New; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt">&nbsp;</PRE></TD>
+    <TD vAlign=top width=324>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>Yes</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>No</FONT></B></P>
+      <P class=MsoNormal><B><FONT face="Courier New" 
+size=2></FONT></B>&nbsp;</P>
+      <P class=MsoNormal><B><FONT face="Courier New" size=2>Yes</FONT></B></P><PRE style="FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: Courier New; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt">&nbsp;</PRE></TD></TR></TBODY></TABLE>
+<DIV class=MsoNormal style="TEXT-ALIGN: center" align=center>
+<HR align=center width="100%" SIZE=2>
+</DIV><FONT face="Arial, Times New Roman"><B>Problem setter: Mohammad Reza 
+Khani</B></FONT></DIV>
+<P><B><FONT style="FONT-SIZE: 10pt" face="Arial, Times New Roman">1st Amirkabir 
+UT Annual Programming Contest&nbsp; Final Round</FONT></B></P></BODY></HTML>

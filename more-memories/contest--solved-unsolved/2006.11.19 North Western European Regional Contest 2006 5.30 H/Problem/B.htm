@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><title>B - The SetStack Computer</title>
+
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link href="B_files/problem.css" type="text/css" rel="stylesheet"></head>
+
+<body>
+
+<h1>Problem B - The SetStack Computer</h1>
+<h3>Time limit: 3 seconds</h3>
+
+<p>
+<img src="B_files/p1.jpg">
+Background from Wikipedia:
+<q>Set theory is a branch of mathematics created principally by the
+German mathematician Georg Cantor at the end of the 19th
+century. Initially controversial, set theory has come to play the role
+of a foundational theory in modern mathematics, in the sense of a
+theory invoked to justify assumptions made in mathematics concerning
+the existence of mathematical objects (such as numbers or functions)
+and their properties. Formal versions of set theory also have a
+foundational role to play as specifying a theoretical ideal of
+mathematical rigor in proofs.</q>
+
+</p><p>
+Given this importance of sets, being the basis of mathematics, a set
+of eccentric theorist set off to construct a supercomputer operating on
+sets instead of numbers. The initial SetStack Alpha is under
+construction, and they need you to simulate it in order to verify the
+operation of the prototype.
+
+</p><p>
+The computer operates on a single stack of sets, which is initially
+empty. After each operation, the cardinality of the topmost set on the
+stack is output. The cardinality of a set <em>S</em> is denoted
+|<em>S</em>| and is the number of elements in <em>S</em>.  The
+instruction set of the SetStack Alpha is <tt>PUSH</tt>, <tt>DUP</tt>,
+<tt>UNION</tt>, <tt>INTERSECT</tt>, and <tt>ADD</tt>}.
+
+</p><ul>
+<li> <tt>PUSH</tt> will push the empty set {} on the stack.
+</li><li> <tt>DUP</tt> will duplicate the topmost set (pop the stack, and then push that set on the stack twice).
+</li><li> <tt>UNION</tt> will pop the stack twice and then push the union of the two sets on the stack.
+</li><li> <tt>INTERSECT</tt> will pop the stack twice and then push the intersection of the two sets on the stack.
+</li><li> <tt>ADD</tt> will pop the stack twice, add the first set to the second one, and then push the resulting set on the stack.
+</li></ul>
+
+<p>
+For illustration purposes, assume that the topmost element of the stack is 
+</p><p>
+<em>A</em> = { {}, {{}} },
+</p><p>
+and that the next one is
+</p><p>
+<em>B</em> = { {}, {{{}}} }.
+</p><p>
+For these sets, we have |<em>A</em>| = 2 and |<em>B</em>| = 2. Then:
+</p><ul>
+<li> <tt>UNION</tt> would result in the set { {}, {{}}, {{{}}} }.  The
+output is 3.
+</li><li> <tt>INTERSECT</tt> would result in the set { {} }.  The output is 1.
+</li><li> <tt>ADD</tt> would result in the set { {}, {{{}}}, {{},{{}}} }.
+The output is 3.
+</li></ul>
+
+<h2>Input</h2>
+
+<p>
+An integer 0 &#8804; <em>T</em> &#8804; 5 on the first line gives the
+cardinality of the set of test cases. The first line of each test case
+contains the number of operations 0 &#8804; <em>N</em> &#8804; 2000. Then
+follow <em>N</em> lines each containing one of the five commands. It
+is guaranteed that the SetStack computer can execute all the commands
+in the sequence without ever popping an empty stack.
+
+</p><h2>Output</h2>
+
+<p>
+For each operation specified in the input, there will be one line of
+output consisting of a single integer. This integer is the cardinality
+of the topmost element of the stack after the corresponding command
+has executed. After each test case there will be a line with
+<tt>***</tt> (three asterisks).
+
+
+</p><div class="sample">
+<h2>Sample Input</h2>
+<pre>2
+9
+PUSH
+DUP
+ADD
+PUSH
+ADD
+DUP
+ADD
+DUP
+UNION
+5
+PUSH
+PUSH
+ADD
+PUSH
+INTERSECT
+</pre>
+</div>
+
+<div class="sample">
+<h2>Sample Output</h2>
+<pre>0
+0
+1
+0
+1
+1
+2
+2
+2
+***
+0
+0
+1
+0
+0
+***
+</pre>
+</div>
+
+<div class="source">
+The 2006 ACM Northwestern European Programming Contest
+</div>
+
+</body></html>

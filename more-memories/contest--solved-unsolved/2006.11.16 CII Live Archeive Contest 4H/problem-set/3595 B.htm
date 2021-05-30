@@ -1,0 +1,99 @@
+<html><head><title>3595 - Linear Pachinko</title></head><body><table align="center" border="1" cellspacing="0" cellpadding="3"><tbody><tr valign="center"><td valign="center" align="center" rowspan="2"><font color="#0000a0" size="5"><b><img src="3595%20B_files/icono.gif"></b></font></td><td align="center" width="500" colspan="5"><font color="#0000a0" size="5"><b>3595 - Linear Pachinko</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=mc&amp;year=2006"><b>North America - Mid Central - 2006/2007</b></a></td></tr><tr valign="center"><td width="100">&nbsp;</td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3595"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3595"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+This problem is inspired by <span id="txt48">Pachinko</span>,
+a popular game in Japan. A traditional Pachinko machine is a cross
+between a vertical pinball machine and a slot machine. The player
+launches small steel balls to the top of the machine using a plunger as
+in pinball. A ball drops through a maze of pins that deflect the ball,
+and eventually the ball either exits at a hole in the bottom and is
+lost, or lands in one of many gates scattered throughout the machine
+which reward the player with more balls in varying amounts. Players who
+collect enough balls can trade them in for prizes. </p><p>
+For the purposes of this problem, a <span class="textit">linear</span> Pachinko machine is a sequence of one or more of the following: holes (``<tt>.</tt>"), floor tiles (``<tt>_</tt>"), walls (``<tt>|</tt>"), and mountains (``<code>/\</code>").
+A wall or mountain will never be adjacent to another wall or mountain.
+To play the game, a ball is dropped at random over some character
+within a machine. A ball dropped into a hole falls through. A ball
+dropped onto a floor tile stops immediately. A ball dropped onto the
+left side of a mountain rolls to the left across any number of
+consecutive floor tiles until it falls into a hole, falls off the left
+end of the machine, or stops by hitting a wall or mountain. A ball
+dropped onto the right side of a mountain behaves similarly. A ball
+dropped onto a wall behaves as if it were dropped onto the left or
+right side of a mountain, with a 50<span class="MATH">%</span> chance
+for each. If a ball is dropped at random over the machine, with all
+starting positions being equally likely, what is the probability that
+the ball will fall either through a hole or off an end? For example,
+consider the following machine, where the numbers just indicate
+character positions and are not part of the machine itself:
+</p><p>
+
+</p><p>
+<br>
+
+</p><pre>123456789 
+/\.|__/\.
+</pre> 
+
+<p>
+
+</p><p>
+<br>
+The probabilities that a ball will fall through a hole or off the end of the machine are as follows, by position: <span class="MATH">1 = 100%</span>, <span class="MATH">2 = 100%</span>, <span class="MATH">3 = 100%</span>, <span class="MATH">4 = 50%</span>, <span class="MATH">5 = 0%</span>, <span class="MATH">6 = 0%</span>, <span class="MATH">7 = 0%</span>, <span class="MATH">8 = 100%</span>, <span class="MATH">9 = 100%</span>. The combined probability for the whole machine is just the average, which is approximately <span class="MATH">61.111%</span>. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>The input consists of one or more linear Pachinko machines, each
+1â&#8364;&#8220;79 characters long and on a line by itself, followed by a line
+containing only "<tt>#</tt>" that signals the end of the input. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each machine, compute as accurately as possible the probability
+that a ball will fall through a hole or off the end when dropped at
+random, then output a single line containing that percentage truncated
+to an integer by dropping any fractional part.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>/\.|__/\. 
+_._/\_|.__/\./\_ 
+... 
+___ 
+./\. 
+_/\_ 
+_|.|_|.|_|.|_ 
+____|_____ 
+#
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>61 
+53 
+100 
+0 
+100 
+50 
+53 
+10
+</pre> 
+
+<p>
+</p><hr><address>Mid Central 2006-2007</address><p></p></body></html>

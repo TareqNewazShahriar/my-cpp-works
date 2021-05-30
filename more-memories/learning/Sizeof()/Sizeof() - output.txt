@@ -1,0 +1,11 @@
+sizeof(BigInt_Al)= 20
+sizeof(BigInt N.1000digit)= 20
+sizeof(Enconded N)= 20
+sizeof(Decoded N)= 20
+
+sizeof(__int64)  = 8
+sizeof( int )    = 4
+sizeof( long )   = 4
+sizeof( short )  = 2
+sizeof( char )   = 1
+sizeof(clock_t)  = 4

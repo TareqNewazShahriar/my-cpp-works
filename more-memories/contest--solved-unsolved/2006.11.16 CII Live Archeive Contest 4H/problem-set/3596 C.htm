@@ -1,0 +1,66 @@
+<html><head><title>3596 - Surprising Strings</title></head><body><table align="center" border="1" cellspacing="0" cellpadding="3"><tbody><tr valign="center"><td valign="center" align="center" rowspan="2"><font color="#0000a0" size="5"><b><img src="3596%20C_files/icono.gif"></b></font></td><td align="center" width="500" colspan="5"><font color="#0000a0" size="5"><b>3596 - Surprising Strings</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=mc&amp;year=2006"><b>North America - Mid Central - 2006/2007</b></a></td></tr><tr valign="center"><td width="100">&nbsp;</td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3596"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3596"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+The <span class="textit">D-pairs</span> of a string of letters are the ordered pairs of letters that are distance D from each other. A string is <span class="textit">D-unique</span> if all of its D-pairs are different. A string is <span class="textit">surprising</span> if it is D-unique for every possible distance D. 
+
+</p><p>
+Consider the string <tt>ZGBG</tt>. Its 0-pairs are <tt>ZG</tt>, <tt>GB</tt>, and <tt>BG</tt>. Since these three pairs are all different, <tt>ZGBG</tt> is 0-unique. Similarly, the 1-pairs of <tt>ZGBG</tt> are <tt>ZB</tt> and <tt>GG</tt>, and since these two pairs are different, <tt>ZGBG</tt> is 1-unique. Finally, the only 2-pair of <tt>ZGBG</tt> is <tt>ZG</tt>, so <tt>ZGBG</tt> is 2-unique. Thus <tt>ZGBG</tt> is surprising. (Note that the fact that <tt>ZG</tt> is both a 0-pair and a 2-pair of <tt>ZGBG</tt> is irrelevant, because 0 and 2 are different distances.) 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+The input consists of one or more nonempty strings of at most 79
+uppercase letters, each string on a line by itself, followed by a line
+containing only an asterisk that signals the end of the input. </p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each string of letters, output whether or not it is surprising using the exact output format shown below. 
+
+</p><p>
+
+</p><p>
+<br>
+
+<span class="textbf">Acknowledgement:</span> This problem is inspired by the ``Puzzling Adventures" column in the December 2003 issue of <span class="textit">Scientific American</span>. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>ZGBG 
+X 
+EE 
+AAB 
+AABA
+AABB 
+BCBABCC 
+*
+</pre>  
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>ZGBG is surprising. 
+X is surprising. 
+EE is surprising. 
+AAB is surprising. 
+AABA is surprising. 
+AABB is NOT surprising. 
+BCBABCC is NOT surprising.
+</pre> 
+
+<p>
+</p><hr><address>Mid Central 2006-2007</address><p></p></body></html>

@@ -1,0 +1,14 @@
+
+two sums: sums[][] & row_sums[][] // row_sum is for no check or main logic, just for storing data
+
+1. before v loop
+	1. row_sum[u, v-1] = 0
+	2. sums[u-1, v] = 0
+	
+2. u, v loop:
+	1. row_sum[u,v] = row_sum[u, v-1] + current	 // to store row_sum
+	2. sums[u,v] = sums[u-1, v] + row_sum[u, v]
+	3.	if(sums[u,v] > max)
+			max = sums[u,v] 		// this check unnecessary: if(current>max) max = current
+	
+	

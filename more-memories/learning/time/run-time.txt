@@ -1,0 +1,10 @@
+
+ 14:54:09 
+ 14:54:12
+
+ Begin: 0
+ End: 2263
+
+ Duration: 2263 millisecond
+ Duration: 2.263 seconds
+

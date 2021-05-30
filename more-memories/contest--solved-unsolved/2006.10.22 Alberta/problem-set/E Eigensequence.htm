@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0062)http://online-judge.uva.es/contest/data/0160/problemset/E.html -->
+<HTML><HEAD><TITLE>Problem E: Eigensequence</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<H2>Problem E: Eigensequence</H2>Given an increasing sequence of integers 
+<I>a<SUB>1</SUB>, a<SUB>2</SUB>, a<SUB>3</SUB>, ..., a<SUB>k</SUB></I>, the 
+<I>E</I>-transform produces a sequence of the same length, <I>b<SUB>1</SUB>, 
+b<SUB>2</SUB>, b<SUB>3</SUB>, ..., b<SUB>k</SUB></I> such that 
+<UL>
+  <LI><I>b<SUB>1</SUB> = a<SUB>1</SUB></I> 
+  <LI>for <I>j&gt;1</I>, <I>b<SUB>j</SUB></I> is the only integer 
+  <I>a<SUB>j-1</SUB> &lt; b<SUB>j</SUB> &#8804; a<SUB>j</SUB></I>, which is divisible 
+  by <I>a<SUB>j</SUB> - a<SUB>j-1</SUB></I>. </LI></UL>For example, from <I>S = 0, 
+1, 4, 9, 16, 25, 36, 49</I> one gets <I>E(S) = 0, 1, 3, 5, 14, 18, 33, 39</I>. 
+<P>A sequence <I>S</I> such that <I>E(S)=S</I> is called an eigensequence. For 
+instance, <I>S&nbsp;=&nbsp;2,3,4,6,8,12,16,18,20</I> is an eigensequence. 
+<CENTER><IMG hspace=20 src="Problem E Eigensequence_files/E.jpg" vspace=20> 
+</CENTER>
+<P>Given integers <I>a<SUB>1</SUB></I> and <I>a<SUB>n</SUB></I>, how many 
+eigensequences (of any length) start with <I>a<SUB>1</SUB></I> and end with 
+<I>a<SUB>n</SUB></I>? 
+<P>Input has many data lines, followed by a terminating line. Each line has two 
+integers, <I>a<SUB>1</SUB></I> and <I>a<SUB>n</SUB></I>. If <I>a<SUB>1</SUB> 
+&lt; a<SUB>n</SUB></I>, it's a data line. Otherwise it's a terminating line that 
+should not be processed. On each line, <I>0 &#8804; a<SUB>1</SUB> &#8804; a<SUB>n</SUB> &#8804; 
+44</I>. This guarantees that each output fits into 32 bit integer. 
+<P>For each data line, print a line with <I>a<SUB>1</SUB></I>, 
+<I>a<SUB>n</SUB></I>, and <I>x</I>, where <I>x</I> is the number of 
+eigensequences (of any length) that start with <I>a<SUB>1</SUB></I> and end with 
+<I>a<SUB>n</SUB></I>. 
+<H3>Sample input</H3><PRE>0 3
+5 7
+2 8
+0 0
+</PRE>
+<H3>Output for sample input</H3><PRE>0 3 3
+5 7 1
+2 8 12
+</PRE>
+<HR>
+<EM>Don Reble</EM> </BODY></HTML>

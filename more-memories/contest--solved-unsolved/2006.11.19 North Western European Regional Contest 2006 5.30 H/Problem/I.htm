@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><title>I - Leonardo's Notebook</title>
+
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link href="I_files/problem.css" type="text/css" rel="stylesheet"></head>
+
+<body>
+
+<h1>Problem I - Leonardo's Notebook</h1>
+<h3>Time limit: 1 second</h3>
+
+<p>
+<img src="I_files/p8.jpg">
+&#8212; I just bought Leonardo's secret notebook!<br>
+Rare object collector Stan Ucker was really agitated but
+his friend, special investigator Sarah Keptic was unimpressed.<br>
+&#8212; How do you know it is genuine?<br>
+&#8212; Oh, it must be, at that price. And it is written in the
+  da Vinci code.<br>
+Sarah browsed a few of the pages. It was obvious
+to her that the code was a substitution cipher, where each
+letter of the alphabet had been substituted by another letter.<br>
+&#8212; Leonardo would have written the plain-text and left it to his
+    assistant to encrypt, she said. And he must have supplied the
+    substitution alphabet to be used. If we are lucky, we can find
+    it on the back cover!<br>
+She turned up the last page and, lo and behold, there was a single
+line of all 26 letters of the alphabet:<br>
+</p><blockquote>
+                QWERTYUIOPASDFGHJKLZXCVBNM
+</blockquote>
+&#8212; This may be Leonardo's instructions meaning that each A in the
+  plain-text was to be replaced by Q, each B with W, etcetera. Let us see...<br>
+To their disappointment, they soon saw that this could not be the
+substitution that was used in the book. Suddenly, Stan brightened.<br>
+&#8212; Maybe Leonardo really wrote the substitution alphabet on the
+last page, and by mistake his assistant coded that line as he had
+coded the rest of the book. So the line we have here is the result
+of applying some permutation TWICE to the ordinary alphabet!<br>
+Sarah took out her laptop computer and coded fiercely for a few
+minutes. Then she turned to Stan with a sympathetic expression.<br>
+&#8212; No, that couldn't be it. I am afraid that you have been duped
+  again, my friend. In all probability, the book is a fake.<br>
+Write a program that takes a permutation of the English alphabet as
+input and decides if it may be the result of performing some
+permutation twice.
+
+<h2>Input</h2>
+
+<p>
+The input begins with a positive number on a line of its own telling
+the number of test cases (at most 500).  Then for each test case there
+is one line containing a permutation of the 26 capital letters of the
+English alphabet.
+
+</p><h2>Output</h2>
+
+<p>
+For each test case, output one line containing <tt>Yes</tt> if the
+given permutation can result from applying some permutation twice on
+the original alphabet string ABC...XYZ, otherwise output
+<tt>No</tt>.
+
+
+
+</p><div class="sample">
+<h2>Sample Input</h2>
+<pre>2
+QWERTYUIOPASDFGHJKLZXCVBNM
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+</pre>
+</div>
+
+<div class="sample">
+<h2>Sample Output</h2>
+<pre>No
+Yes
+</pre>
+</div>
+
+<div class="source">
+The 2006 ACM Northwestern European Programming Contest
+</div>
+
+</body></html>
