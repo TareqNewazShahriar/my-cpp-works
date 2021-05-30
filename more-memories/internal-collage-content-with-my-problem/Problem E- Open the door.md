@@ -17,51 +17,39 @@ You cannot open the 2nd door before the 1st door, because the key of the 2nd doo
 **Input**
 
 The first line of the input contains the number of input cases in the input file. Each case starts with a line containing two integers, the row (1≤ **m** ≤500) and column
-
-(2≤ **n** ≤500) of the rectangle grid. Then follows **m** lines, each contains **n** characters. Input will be terminated by two zero. This input will not be processed.
+(2≤ **n** ≤500) of the rectangle grid. Then follows **m** lines, each contains **n** characters.
 
 **Output**
-
 For each input case, output one line containing a single integer, the necessary steps to reach to the last door.
 
-**Sample Input**
-
-**Output**
+**Sample Input** 
 ```
 2
 
 4 5
-
 ...#.
-
 ..#..
-
 ....#
-
 .#...
 
+
 2 4
-
 ....
-
 #...
 
-0 0
+```
 
+**Output**
+```
 12
-
 1
 ```
 
 -----
-
 Problem Setter: Tariq Newaz Shahriar
 
-
-Although in Bangladesh we have faults in our computer education
-
- system, we learn programming at an age which is often too late
-
-\-Shahriar Manzoor, Southeast University
-
- Elite problem setter of International Collegiate Programming Contest (ACM ICPC)
+<sub>
+Although we have faults in our computer education system, we learn programming at an age which is often too late
+<br>
+-Shahriar Manzoor, Southeast University (Elite problem setter of International Collegiate Programming Contest (ACM ICPC))
+</sub>
