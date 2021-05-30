@@ -2,7 +2,7 @@
 
 There has **N** number of computers and every computer is connected directly by the cable with each other. Let observe the network-
 
-![4-computers-with-mesh-network](4-computers-with-mesh-network.jpg)
+![4-computers-with-mesh-network](images/4-computers-with-mesh-network.jpg)
 
 The problem is- if N number of computers is connected then how many cables are needed to create the network among these N computers?
 

@@ -2,7 +2,7 @@
 
 There has a spiral tap. Spiral tap is a kind of coil of consecutive number where number 1 is start from the middle point of the coil. For instance- consider a 5X5 spiral tap and the directions-
 
-![number-grid-with-direction](number-grid-with-direction.jpg)
+![number-grid-with-direction](images/number-grid-with-direction.jpg)
 
 You are walking through every grid of this tap. You started from position 1 and always look at the next number of the grid (where you will go next). Suppose, you are in grid 5. So you are looking at position 6 at South. You have a campus with you. Now you are in position **P,** tell-which direction are you looking at now?
 
