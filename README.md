@@ -1,3 +1,3 @@
 # My Sweet Memories
 
-Collection of my C++ code that I have done when I was a student. I used to solve UVa (ACM.UVa) problems, write function libraries, build fanciful tools.
+Collection of my C++ code that I have written when I was a student. I used to spend my time writing function libraries, solving UVa (ACM.UVa) problems, building fanciful tools.
