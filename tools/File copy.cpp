@@ -14,24 +14,24 @@ bool flag=1;
 /*----------------------------------*/
 void main()
 {
-while(i)
-{
-	char  num[10], 
-		*extra = "100:", 
-		in[200]="http://acm.uva.es/problemset/problemstat.php?p=:";
-	
-	printf("The number of Problem : "); scanf("%s",num);
-	
-	strcat(in,num); _itoa(page,extra+4,10); strcat(in,extra); page+=100;
-	
-	i=surf_the_net();
-	if(i)
-		printf("The file is found at page %d.\n",);
-	else puts("The file wasn't found.");
-	
-	printf("Repeat? 1 / 0 : "); 
-	scanf("%d",&i);
-}
+	while(i)
+	{
+		char  num[10], 
+			*extra = "100:", 
+			in[200]="http://acm.uva.es/problemset/problemstat.php?p=:";
+		
+		printf("The number of Problem : "); scanf("%s",num);
+		
+		strcat(in,num); _itoa(page,extra+4,10); strcat(in,extra); page+=100;
+		
+		i=surf_the_net();
+		if(i)
+			printf("The file is found at page %d.\n",);
+		else puts("The file wasn't found.");
+		
+		printf("Repeat? 1 / 0 : "); 
+		scanf("%d",&i);
+	}
 }	
 
 
